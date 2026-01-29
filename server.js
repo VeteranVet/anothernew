@@ -11,7 +11,7 @@ app.use(express.static('.'));
 
 // Serve the login page
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'login-page.html'));
+    res.sendFile(path.join(__dirname, 'login.html'));
 });
 
 // Handle form submission
